@@ -8,7 +8,7 @@
     }
 
     .textBox h1 {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 8px;
         line-height: 30px;
     }
@@ -34,6 +34,117 @@
         width: 10px;
         height: 10px;
     }
+
+    .nav-home a,
+    .nav-library a,
+    .nav-trakteer a,
+    .nav-genre a {
+        font-size: 13px;
+    }
+
+    nav a img {
+        max-width: 120px;
+    }
+
+    .search-bar {
+        min-width: 280px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 13px;
+    }
+
+    /* last update section */
+    .last-update-section {
+        margin-top: 50px;
+    }
+
+    .last-update-header {
+        margin-bottom: 20px;
+    }
+
+    .last-update-header .headline {
+        font-size: 23px;
+    }
+
+    .last-update-view a {
+        font-size: 15px;
+    }
+
+    .last-update-items {
+        margin-bottom: 10px;
+    }
+
+    .last-update-items img {
+        width: 150px;
+    }
+
+    .last-update-items h5 a {
+        font-size: 12px;
+    }
+
+    .last-update-items a {
+        font-size: 12px;
+    }
+
+    /* new release section */
+    .new-release-section {
+        margin-top: 30px;
+    }
+
+    .new-release-header {
+        margin-bottom: 20px;
+    }
+
+    .new-release-header .headline {
+        font-size: 23px;
+    }
+
+    .new-release-view a {
+        font-size: 15px;
+    }
+
+    .new-release-items {
+        margin-bottom: 20px;
+    }
+
+    .new-release-items img {
+        width: 150px;
+    }
+
+    .new-release-items h5 a {
+        font-size: 12px;
+    }
+
+    .new-release-items a {
+        font-size: 12px;
+    }
+
+    /* browse-genre-section */
+    .browse-genre-section {
+        margin: 20px 0;
+    }
+    
+    .browse-genre-form {
+        padding: 20px;
+    }
+    
+    .genre-container {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    
+    .genre-container .genre-title {
+        margin-left: 15px;
+    }
+    
+    .genre-order label {
+        font-size: 16px;
+    }
+    
+    .genre-submit input {
+        font-size: 12px;
+    }
 }
 
 /* Tablets (portrait and landscape) */
@@ -50,25 +161,58 @@
         display: block;
     }
 
+    nav {
+        width: 100%;
+    }
+
+    .nav-home a,
+    .nav-library a,
+    .nav-trakteer a,
+    .nav-genre a {
+        font-size: 15px;
+    }
+
+    nav a img {
+        max-width: 100px;
+    }
+
+    .search-bar {
+        min-width: 280px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .search-box img,
+    .nav-user img,
+    .hamburger-menu img {
+        width: 20px;
+    }
+
     .textBox {
-        margin: 0px 10px; /* Further reduce margin */
-        padding: 1rem; /* Further reduce padding */
-        max-width: 550px; /* Further reduce max-width */
+        margin: 0px 30px; 
+        padding: 1rem; 
+        max-width: 650px; 
         max-height: 500px;
     }
 
     .textBox h1 {
-        font-size: 22px;
+        font-size: 19px;
         margin-bottom: 6px;
         line-height: 25px;
     }
     
     .textBox p {
-        font-size: 10px;
+        font-size: 9px;
     }
     
     .textBox a {
         font-size: 9px;
+    }
+
+    .imgBox {
+        margin: 0px 50px;
     }
     
     .imgBox img {
@@ -82,6 +226,125 @@
     .nav-bullet {
         width: 8px;
         height: 8px;
+    }
+
+    .search-bar {
+        max-width: 500px;
+    }
+
+    /* last update section */
+    .last-update-section {
+        margin-top: 40px;
+    }
+
+    .last-update-header {
+        margin-bottom: 20px;
+    }
+
+    .last-update-header .headline {
+        font-size: 18px;
+    }
+
+    .last-update-view a {
+        font-size: 12px;
+    }
+
+    .last-update-items {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 0.4em;
+    }
+
+    .last-update-items img {
+        width: 110px;
+    }
+
+    .last-update-items h5 a {
+        font-size: 9px;
+    }
+
+    .last-update-items a {
+        font-size: 9px;
+    }
+
+    /* new release section */
+    .new-release-section {
+        margin-top: 20px;
+    }
+
+    .new-release-header {
+        margin-bottom: 20px;
+    }
+
+    .new-release-header .headline {
+        font-size: 18px;
+    }
+
+    .new-release-view a {
+        font-size: 12px;
+    }
+
+    .new-release-items {
+        margin-bottom: 30px;
+        border-radius: 10px;
+        padding: 0.4em;
+    }
+
+    .new-release-items img {
+        width: 110px;
+    }
+
+    .new-release-items h5 a {
+        font-size: 9px;
+    }
+
+    .new-release-items a {
+        font-size: 9px;
+    }
+
+    footer p {
+        font-size: 12px;
+        line-height: 1.5; 
+    }
+
+    /* browse-genre-section */
+    .browse-genre-section {
+        margin: 10px 0;
+    }
+
+    .browse-genre-container h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    
+    .browse-genre-form {
+        padding: 15px;
+    }
+    
+    .genre-container {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    
+    .genre-container .genre-title {
+        margin-left: 12px;
+    }
+
+    .genre-checkmark {
+        height: 9px;
+        width: 9px;
+    }
+    
+    .genre-order label {
+        font-size: 13px;
+    }
+
+    .genre-order select {
+        font-size: 12px;
+    }
+    
+    .genre-submit input {
+        font-size: 11px;
     }
 }
 
@@ -98,17 +361,18 @@
         display: block;
     }
 
-    body {
-        padding: 20px 30px;
-    }
-
     nav a img {
         max-width: 120px;
         padding: 5px 10px 0px;
     }
 
+    nav {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
     .textBox {
-        margin: 0px 5px; 
+        margin: 0px 30px; 
         padding: 0.5rem; 
         max-width: 100%; 
         max-height: 400px; 
@@ -121,23 +385,173 @@
     }
     
     .textBox p {
-        font-size: 9px;
-    }
-    
-    .textBox a {
         font-size: 8px;
     }
     
+    .textBox a {
+        font-size: 7px;
+    }
+
+    .imgBox {
+        margin: 0px 30px;
+    }
+    
     .imgBox img {
-        width: 180px;
+        width: 150px;
     }
     
     .imgBox img:hover {
-        width: 150px;
+        width: 130px;
     }
 
     .nav-bullet {
         width: 6px;
         height: 6px;
+    }
+
+    .nav-home a,
+    .nav-library a,
+    .nav-trakteer a,
+    .nav-genre a {
+        font-size: 15px;
+    }
+
+    nav a img {
+        max-width: 120px;
+    }
+
+    .search-bar {
+        min-width: 290px;
+    }
+
+    .search-box input {
+        padding: 0.8rem;
+        font-size: 12px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .search-box img,
+    .nav-user img,
+    .hamburger-menu img {
+        width: 18px;
+    }
+
+    /* last update section */
+    .last-update-section {
+        margin-top: 30px;
+    }
+
+    .last-update-header {
+        margin-bottom: 17px;
+    }
+
+    .last-update-header .headline {
+        font-size: 15px;
+    }
+
+    .last-update-view a {
+        font-size: 11px;
+    }
+
+    .last-update-items {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 0.4em;
+    }
+
+    .last-update-items img {
+        width: 95px;
+    }
+
+    .last-update-items h5 a {
+        font-size: 8px;
+    }
+
+    .last-update-items a {
+        font-size: 8px;
+    }
+
+    /* new release section */
+    .new-release-section {
+        margin-top: 20px;
+    }
+
+    .new-release-header {
+        margin-bottom: 17px;
+    }
+
+    .new-release-header .headline {
+        font-size: 15px;
+    }
+
+    .new-release-view a {
+        font-size: 11px;
+    }
+
+    .new-release-items {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 0.4em;
+    }
+
+    .new-release-items img {
+        width: 95px;
+    }
+
+    .new-release-items h5 a {
+        font-size: 8px;
+    }
+
+    .new-release-items a {
+        font-size: 8px;
+    }
+
+    footer p {
+        font-size: 10px;
+        line-height: 1.2; 
+    }
+
+    /* browse-genre-section */
+    .browse-genre-section {
+        margin: 0;
+    }
+
+    .browse-genre-container h2 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .genre-container {
+        margin-right: 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .genre-container .genre-title {
+        margin-left: 12px;
+    }
+
+    .genre-checkmark {
+        height: 9px;
+        width: 9px;
+    }
+
+    .genre-order {
+        margin: 5px 10px;
+    }
+    
+    .genre-order label {
+        font-size: 12px;
+    }
+
+    .genre-order select {
+        font-size: 10px;
+    }
+    
+    .genre-submit input {
+        font-size: 10px;
     }
 }

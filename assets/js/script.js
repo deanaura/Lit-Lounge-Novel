@@ -1,36 +1,3 @@
-// Dropdown for genre-list
-const dropdownBtnGenre = document.getElementById("drop-text-genre");
-const spanGenre = document.getElementById("span-genre");
-const iconGenre = document.getElementById("icon-genre");
-const genreList = document.getElementById("genre-list");
-const genreListItems = document.querySelectorAll(".genre-list-item");
-
-dropdownBtnGenre.onclick = function () {
-    if (genreList.classList.contains("show")) {
-        iconGenre.style.rotate = "0deg";
-    } else {
-        iconGenre.style.rotate = "-180deg";
-    }
-    genreList.classList.toggle("show");
-}
-
-window.onclick = function (e) {
-    if (
-        e.target.id !== "drop-text-genre" &&
-        e.target.id !== "span-genre" &&
-        e.target.id !== "icon-genre"
-    ) {
-        genreList.classList.remove("show");
-        iconGenre.style.rotate = "0deg";
-    }
-}
-
-for (itemGenre of genreListItems) {
-    itemGenre.onclick = function (e) {
-        spanGenre.innerText = e.target.innerText;
-    }
-}
-
 // Hamburger menu functionality
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const sidebarMenu = document.getElementById("sidebar-menu");
@@ -54,29 +21,15 @@ window.onclick = function (e) {
     }
 }
 
-// Dropdown for sidebar genre-list
-const dropdownBtnGenreSidebar = document.getElementById("drop-text-genre-sidebar");
-const spanGenreSidebar = document.getElementById("span-genre-sidebar");
-const iconGenreSidebar = document.getElementById("icon-genre-sidebar");
-const genreListSidebar = document.getElementById("genre-list-sidebar");
-const genreListItemsSidebar = document.querySelectorAll("#genre-list-sidebar .genre-list-item");
-
-dropdownBtnGenreSidebar.onclick = function () {
-    if (genreListSidebar.classList.contains("show")) {
-        iconGenreSidebar.style.rotate = "0deg";
+// box shadow navbar
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 0) {
+        nav.classList.add('navbar-scrolled');
     } else {
-        iconGenreSidebar.style.rotate = "-180deg";
+        nav.classList.remove('navbar-scrolled');
     }
-    genreListSidebar.classList.toggle("show");
-}
-
-for (itemGenreSidebar of genreListItemsSidebar) {
-    itemGenreSidebar.onclick = function (e) {
-        spanGenreSidebar.innerText = e.target.innerText;
-        genreListSidebar.classList.remove("show");
-        iconGenreSidebar.style.rotate = "0deg";
-    }
-}
+});
 
 // hero slider
 const sliderContainer = document.querySelector(".slider-container");
@@ -140,3 +93,8 @@ sliderContainer.addEventListener('mouseenter', () => {
 sliderContainer.addEventListener('mouseleave', () => {
     autoplayInterval = setInterval(nextSlide, transitionDuration);
 });
+
+
+// dropdown option genre
+
+
