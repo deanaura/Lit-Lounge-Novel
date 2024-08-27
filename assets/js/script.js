@@ -31,6 +31,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
 // hero slider
 const sliderContainer = document.querySelector(".slider-container");
 const slides = document.querySelectorAll(".slide");
@@ -94,7 +95,5 @@ sliderContainer.addEventListener('mouseleave', () => {
     autoplayInterval = setInterval(nextSlide, transitionDuration);
 });
 
-
-// dropdown option genre
 
 

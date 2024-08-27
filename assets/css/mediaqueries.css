@@ -145,6 +145,36 @@
     .genre-submit input {
         font-size: 12px;
     }
+
+    /* preview genre section */
+    .preview-genre-content {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .preview-genre-item img {
+        max-width: 150px;
+    }
+
+    .description-box h4 a {
+        line-height: 1.2 !important;
+        font-size: 15px;
+    }
+
+    .description-box .genre-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .description-box .genre-list a {
+        font-size: 11px;
+    }
+
+    .description-box p {
+        font-size: 11px;
+        -webkit-line-clamp: 6; 
+    }
 }
 
 /* Tablets (portrait and landscape) */
@@ -345,6 +375,35 @@
     
     .genre-submit input {
         font-size: 11px;
+    }
+
+    /* preview genre section */
+    .preview-genre-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .preview-genre-item img {
+        max-width: 120px;
+    }
+
+    .description-box h4 a {
+        line-height: 1.2 !important;
+        font-size: 13px;
+    }
+
+    .description-box .genre-list {
+        gap: 3px;
+        margin-bottom: 12px;
+    }
+
+    .description-box .genre-list a {
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .description-box p {
+        font-size: 10px;
+        -webkit-line-clamp: 4; 
     }
 }
 
@@ -553,5 +612,30 @@
     
     .genre-submit input {
         font-size: 10px;
+    }
+
+    /* preview genre section */
+    .preview-genre-item img {
+        max-width: 90px;
+    }
+
+    .description-box h4 a {
+        line-height: 1.2 !important;
+        font-size: 12px;
+    }
+
+    .description-box .genre-list {
+        gap: 3px;
+        margin-bottom: 12px;
+    }
+
+    .description-box .genre-list a {
+        font-size: 9px;
+        padding: 3px;
+    }
+
+    .description-box p {
+        font-size: 9px;
+        -webkit-line-clamp: 5; 
     }
 }
