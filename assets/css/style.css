@@ -3,6 +3,7 @@
 :root {
     --soft-cream: #F8F4F1;
     --charcoal-gray: #686868;
+    --light-gray: #414141;
     --misty-blue: #B0C4DE;
     --white: #ffffff;
 }
@@ -322,7 +323,7 @@ nav a img {
 
 .last-update-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
@@ -348,6 +349,10 @@ nav a img {
     width: 200px;
     height: auto;
     border-radius: 10px;
+}
+
+.last-update-items h5 {
+    max-width: 220px;
 }
 
 .last-update-items h5 a {
@@ -404,7 +409,7 @@ nav a img {
 
 .new-release-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
@@ -430,6 +435,10 @@ nav a img {
     width: 200px;
     height: auto;
     border-radius: 10px;
+}
+
+.new-release-items h5 {
+    max-width: 220px;
 }
 
 .new-release-items h5 a {
@@ -602,11 +611,13 @@ footer p {
 .preview-genre-section {
     margin: 20px 0;
     position: relative;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 100%;
 }
 
 .preview-genre-container {
     padding: 10px 0;
+    width: 100%;
 }
 
 .preview-genre-content {
@@ -615,7 +626,7 @@ footer p {
     gap: 20px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .preview-genre-item {
@@ -804,8 +815,12 @@ footer p {
     padding: 10px;
     cursor: pointer;
     border: none;
-    background: var(--light-gray);
+    background: var(--misty-blue);
     border-radius: 5px;
+}
+
+.pageNumbers a {
+    color: #333; 
 }
 
 .page-number.active {

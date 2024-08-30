@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.getElementById("next");
     
     // Fetch content limit from a data attribute on the pagination container
-    const contentLimit = parseInt(document.querySelector('.pagination-container').getAttribute('data-content-limit'), 10) || 15;
+    const contentLimit = parseInt(document.querySelector('.pagination-container').getAttribute('data-content-limit'), 10) || 16;
     
     const pageCount = Math.ceil(listItems.length / contentLimit);
     let currentPage = 1;
