@@ -31,6 +31,44 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// login-register & darkmode
+document.addEventListener('DOMContentLoaded', function() {
+    const navUser = document.getElementById('nav-user');
+    const navUserMenu = document.querySelector('.nav-user-menu');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const colorOptions = document.querySelectorAll('.color-option');
+
+    // Event listener for nav-user click
+    navUser.addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevent click from bubbling up
+        navUserMenu.style.display = navUserMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Event listener for dark mode toggle
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        console.log('Dark mode toggled');
+    });
+
+    // Click event for color options
+    colorOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            if (this.classList.contains('white')) {
+                document.body.classList.remove('dark-mode');
+            } else {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    });
+
+    // Close the menu if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!navUser.contains(event.target)) {
+            navUserMenu.style.display = 'none';
+        }
+    });
+});
+
 
 // hero slider
 const sliderContainer = document.querySelector(".slider-container");

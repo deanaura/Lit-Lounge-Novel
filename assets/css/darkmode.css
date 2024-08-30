@@ -1,0 +1,181 @@
+/* darkmode */
+.dark-mode {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+}
+
+.dark-mode nav {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .nav-logo,
+.dark-mode .nav-user img,
+.dark-mode .sidebar-close {
+    filter: brightness(2.5);
+} 
+
+.dark-mode .navbar-scrolled {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .nav-home a,
+.dark-mode .nav-library a,
+.dark-mode .nav-trakteer a,
+.dark-mode .nav-genre a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .search-bar {
+    box-shadow: none;
+}
+
+.dark-mode .search-box {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .nav-user-menu {
+    background-color: var(--dark-mode-light-gray);
+}
+
+.dark-mode .nav-user-menu a {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-light-gray);
+}
+
+.dark-mode .nav-user-menu a:hover {
+    color: var(--dark-mode-soft-cream);
+    background-color: var(--white);
+}
+
+.dark-mode .sidebar-menu {
+    background-color: var(--dark-mode-bg);
+}
+
+.dark-mode .slider-container{
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .last-update-header .headline,
+.dark-mode .last-update-view a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .last-update-items .title a,
+.dark-mode .last-update-items a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .last-update-items:hover,
+.dark-mode .new-release-items:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .new-release-header .headline,
+.dark-mode .new-release-view a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .last-update-view a:hover,
+.dark-mode .new-release-view a:hover {
+    color: red;
+    text-decoration: underline red;
+}
+
+.dark-mode .new-release-items .title a,
+.dark-mode .new-release-items a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .new-release-items a:nth-of-type(2) {
+    text-decoration: underline var(--dark-mode-text);
+}
+
+.dark-mode footer {
+    background-color: var(--dark-mode-light-gray);
+}
+
+.dark-mode footer p {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .browse-genre-container h2 {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .browse-genre-form {
+    background-color: var(--dark-mode-light-gray);
+    border-color: var(--dark-mode-bg);
+}
+
+.dark-mode .browse-genre-form .genre-container:hover{
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .genre-order label {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .preview-genre-item {
+    background-color: var(--dark-mode-light-gray);
+    border-color: var(--dark-mode-bg);
+}
+
+.dark-mode .preview-genre-item .description-box a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .preview-genre-item .description-box a:hover {
+    text-decoration: underline var(--dark-mode-text);
+}
+
+/* preview last update & new release */
+.dark-mode .preview-last-update-header .headline,
+.dark-mode .preview-new-release-header .headline {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .preview-last-update-item:hover,
+.dark-mode .preview-new-release-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+}
+
+.dark-mode .preview-last-update-item a,
+.dark-mode .preview-new-release-item a {
+    color: var(--dark-mode-text);
+}
+
+/* darkmode pagination */
+.dark-mode .pagination button:disabled {
+    background-color: #ccc;
+}
+
+.dark-mode .pagination button,
+.dark-mode .pagination a {
+    border: 1px solid #ddd;
+}
+
+.dark-mode .pagination a.active,
+.dark-mode .pagination button:disabled {
+    background-color: #646464;
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .pagination button:not(:disabled):hover,
+.dark-mode .pagination a:hover {
+    background-color: #646464;
+}
+
+.dark-mode .pageNumbers a {
+    color: var(--dark-mode-text);
+}
+
+.dark-mode .page-number.active {
+    background: var(--dark-mode-light-gray);
+    color: var(--white);
+}
+
+.dark-mode .pagination button:hover{
+    color: var(--white);
+}
